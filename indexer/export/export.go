@@ -95,7 +95,7 @@ func (e *ProgramExporter) extractParticipatedEvents(nextCursor *models.EventId) 
 			SuiEventFilter:  e.stakeEventFilter,
 			Cursor:          nextCursor,
 			Limit:           EVENT_LIMIT,
-			DescendingOrder: true,
+			DescendingOrder: false,
 		},
 	)
 
